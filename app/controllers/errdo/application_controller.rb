@@ -1,5 +1,5 @@
 module Errdo
-  class ApplicationController < ::ApplicationController
+  class ApplicationController < Errdo.controller_parent_class_name.constantize
 
     layout "errdo/errdo_layout"
 

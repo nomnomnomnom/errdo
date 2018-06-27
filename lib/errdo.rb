@@ -47,6 +47,9 @@ module Errdo
 
   mattr_accessor :ignore_time
   @@ignore_time = 5.minutes
+
+  mattr_accessor :controller_parent_class_name
+  @@controller_parent_class_name = '::ApplicationController'
   # rubocop:enable Style/ClassVars
 
   # == Authentication ==

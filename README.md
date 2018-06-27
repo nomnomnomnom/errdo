@@ -192,6 +192,10 @@ This can be changed by setting
 
 `config.ignore_time = 5.minutes`
 
+By default, Errdo controllers extend `::ApplicationController`.  To changes this, set
+
+`config.controller_parent_class_name = '::YourController'`
+
 ## Contributing
 
 If there's a big feature you want, I would hope you would consider contributing.

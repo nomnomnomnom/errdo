@@ -58,4 +58,8 @@ Errdo.setup do |config|
   ## == Non Web Requests ============================
   # Error logging for rake tasks is on by default. To turn it off, set
   # config.log_task_exceptions = false
+
+  ## == Controller Base ============================
+  # Errdo controllers extend this class. Default is '::ApplicationController'
+  # config.controller_parent_class_name = '::ApplicationController'
 end
