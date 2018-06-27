@@ -14,7 +14,7 @@ module Errdo
     serialize :backtrace
 
     has_many :error_occurrences
-    belongs_to :last_experiencer, polymorphic: true
+    belongs_to :last_experiencer, polymorphic: true, optional: true
 
     before_validation :create_unique_string
 

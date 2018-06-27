@@ -8,7 +8,7 @@ module Errdo
     serialize :header_values
 
     belongs_to :error, counter_cache: :occurrence_count
-    belongs_to :experiencer, polymorphic: true
+    belongs_to :experiencer, polymorphic: true, optional: true
 
     before_save :scrub_utf
 
